@@ -14,14 +14,16 @@
         
         
         
-        ]);
+        ])
 </head>
 <body>
     
         <div class="container  py-4 px-3 mx-auto">
             <h1> Hello, bootstrap and vite </h1>
-            <form action="{{url('/tela_inicial" method="get">
-            <button class="btn btn-primary">Ir para proxima pagina</button>
+            <form action="/gerenciador_de_servicos" method="get">
+            <button class="btn btn-primary">Ir para a pagina de gerenciamento de serviços</button>
+            <br>
+            <br>
             </form>
         </div>
 </body>

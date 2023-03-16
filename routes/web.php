@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('/tela_inicial', function () {
-    return view('tela_inicial');
+Route::get('/gerenciador_de_servicos', function () {
+    return view('index');
 });
