@@ -39,41 +39,6 @@
 </nav>
 <!--Navbar-->
 <br>
-<!-- Form -->
-<div style="width: 80%;  
-    display: block;
-    margin-left: auto;
-    margin-right: auto">
-<form action="/SalvarServicos" method="post">
-  @csrf
-  <h3> <b>Cadastrar - Agendamento de Potenciais Clientes <b> </h3>
-  <h5> Sistema utilizado para agendamento de serviços </h5>
-  <br> 
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Nome:</label>
-  <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Nome">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
-  <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Telefone">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Origem:</label>
-  <select class="form-select" aria-label="Default select example" name="Origem">
-  <option selected value="0">Celular</option>
-  <option value="1">Telefone Fixo</option>
-  <option value="2">Email</option>
-</select>
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Observação:</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Observacao"></textarea>
-</div>
-<br>
-<button type="submit" class="btn btn-primary">Enviar</button>
 
-</form>
-    </div>
-<!-- Form -->
 </body>
 </html>

@@ -1,5 +1,9 @@
 <?php
 
+use App\Models\Servicos;
+use Illuminate\Http\Client\Request as ClientRequest;
+use Illuminate\Http\Request as HttpRequest;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +18,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Route::get('/login', function () {
-    return view('tela_inicial');
+Route::get('/indexServicos', function () {
+    $Servicos = new Servicos();
+
+
+    return view('indexServicos', [$servicos = $Servicos->all()]);
+})->name("mostraServicos");
+
+Route::post('SalvarServicos', function (HttpRequest $request){
+    $Servicos = new Servicos();
+    $Servicos->Nome = $request->Nome;
+    $Servicos->Telefone = $request->Telefone;
+    $Servicos->Origem = $request->Origem;
+    $Servicos->Observacao = $request->Observacao;
+    $Servicos->save();
+    return to_route('mostraServicos');
 });
