@@ -25,10 +25,11 @@ Route::get('/indexServicos', function () {
     $Servicos = new Servicos();
 
 
-    return view('indexServicos', [$servicos = $Servicos->all()]);
+    return view('indexServicos', ['servicos' => $Servicos->all()]);
 })->name("mostraServicos");
 
 Route::post('SalvarServicos', function (HttpRequest $request){
+    //Servicos::insert("insert into servicos values($request->Nome, $request->Telefone, $request->Origem, $request->Observacao)");
     $Servicos = new Servicos();
     $Servicos->Nome = $request->Nome;
     $Servicos->Telefone = $request->Telefone;
