@@ -57,10 +57,10 @@
                 
             
             <tr>
-              <th scope="row">{{$servicos[0]}}</th>
-              <td>{{$servicos[1]}}</td>
-              <td>{{$servicos[2]}}</td>
-              <td>{{$servicos[3]}}</td>
+              <th scope="row">{{$servicos['Nome']}}</th>
+              <td>{{$servicos['Telefone']}}</td>
+              <td>{{$servicos['Origem']}}</td>
+              <td>{{$servicos['Observacao']}}</td>
             </tr>
             @endforeach
           </tbody>
