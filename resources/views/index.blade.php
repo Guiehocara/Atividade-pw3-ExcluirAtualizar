@@ -60,9 +60,9 @@
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Origem:</label>
   <select class="form-select" aria-label="Default select example" name="Origem">
-  <option selected value="0">Celular</option>
-  <option value="1">Telefone Fixo</option>
-  <option value="2">Email</option>
+  <option selected value="Celular">Celular</option>
+  <option value="Telefone Fixo">Telefone Fixo</option>
+  <option value="Email">Email</option>
 </select>
 </div>
 <div class="mb-3">
