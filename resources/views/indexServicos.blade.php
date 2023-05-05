@@ -22,7 +22,7 @@
             <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/indexServicos">Consultar</a>
+            <a class="nav-link" href="/consulta">Consultar</a>
           </li>
         </ul>
         <form class="d-flex" role="search">

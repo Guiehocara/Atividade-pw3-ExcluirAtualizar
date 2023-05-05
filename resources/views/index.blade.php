@@ -27,7 +27,7 @@
           <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/indexServicos">Consultar</a>
+          <a class="nav-link" href="/consulta">Consultar</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -44,7 +44,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto">
-<form action="/SalvarServicos" method="post">
+<form action="/consulta" method="post">
   @csrf
   <h3> <b>Cadastrar - Agendamento de Potenciais Clientes <b> </h3>
   <h5> Sistema utilizado para agendamento de serviços </h5>

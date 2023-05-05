@@ -23,7 +23,7 @@ class ServicosController extends Controller
     return to_route('mostraServicos');
     }
     public function excluirPedidos(){
-
+        
     }
     public function atualizarPedido(){
 
