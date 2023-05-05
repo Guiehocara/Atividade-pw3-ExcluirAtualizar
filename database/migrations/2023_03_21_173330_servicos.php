@@ -18,9 +18,10 @@ return new class extends Migration
             $table->string('Nome');
             $table->string('Telefone');
             $table->string('Origem');
+            $table->string('DataContato');
             $table->string('Observacao');
-            $table->string('created_at');
-            $table->string('updated_at');
+            $table->date('created_at');
+            $table->date('updated_at');
     
             
 

@@ -66,6 +66,10 @@
 </select>
 </div>
 <div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Data de Contato:</label>
+  <input class="form-control" type="date"  id="exampleFormControlTextarea1" rows="1" name="DataContato"></textarea>
+</div>
+<div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Observação:</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Observacao"></textarea>
 </div>

@@ -10,7 +10,7 @@
   <body>
   
     <!-- Navbar-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: lightblue;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: lightblue; position: fixed; width: 100%;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Sistema Web</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,14 +41,20 @@
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
         'node_modules/bootstrap/dist/js/bootstrap.bundle.js'
         ])
-        
+        <br>
+        <br>
+
+        <br>
         <table class="table">
           <thead>
             <tr>
+            <th scope="col">ID</th>
               <th scope="col">Nome</th>
               <th scope="col">Telefone</th>
               <th scope="col">Origem</th>
+              <th scope="col">Data de Contato</th>
               <th scope="col">Observação</th>
+              <th scope="col">Ações</th>
             </tr>
           </thead>
           
@@ -57,10 +63,13 @@
                 
             
             <tr>
-              <th scope="row">{{$servicos['Nome']}}</th>
+              <th scope="row">{{$servicos['id']}}</th>
+              <td>{{$servicos['Nome']}}</td>
               <td>{{$servicos['Telefone']}}</td>
               <td>{{$servicos['Origem']}}</td>
+              <td>{{$servicos['DataContato']}}</td>
               <td>{{$servicos['Observacao']}}</td>
+              <td><button type="button" class="btn btn-primary" style="margin-left:10px; margin-bottom: 10px;">Atualizar</button> </nobr> <button type="button" class="btn btn-primary"  style="margin-left:10px; margin-bottom: 10px;">Excluir</button></td>
             </tr>
             @endforeach
           </tbody>

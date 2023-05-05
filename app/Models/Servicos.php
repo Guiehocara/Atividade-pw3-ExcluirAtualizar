@@ -15,6 +15,7 @@ class Servicos extends Model
         'Nome',
         'Telefone',
         'Origem',
+        'DataContato',
         'Observacao',
     ];
 
