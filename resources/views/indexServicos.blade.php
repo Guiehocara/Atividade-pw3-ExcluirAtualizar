@@ -69,7 +69,7 @@
               <td>{{$servicos['Origem']}}</td>
               <td>{{$servicos['DataContato']}}</td>
               <td>{{$servicos['Observacao']}}</td>
-              <td><button type="button" class="btn btn-primary" style="margin-left:10px; margin-bottom: 10px;">Atualizar</button> </nobr> <button type="button" class="btn btn-primary"  style="margin-left:10px; margin-bottom: 10px;">Excluir</button></td>
+              <td><form action=""> <button type="button" class="btn btn-primary" style="margin-left:10px; margin-bottom: 10px;">Atualizar</button> </nobr> <button type="button" class="btn btn-primary"  style="margin-left:10px; margin-bottom: 10px;">Excluir</button></td>
             </tr>
             @endforeach
           </tbody>

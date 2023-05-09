@@ -44,7 +44,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto">
-<form action="/consulta" method="post">
+<form action="/SalvarServicos" method="post">
   @csrf
   <h3> <b>Cadastrar - Agendamento de Potenciais Clientes <b> </h3>
   <h5> Sistema utilizado para agendamento de serviços </h5>
