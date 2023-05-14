@@ -1,11 +1,10 @@
 <?php
 
 use App\Models\Servicos;
-use Illuminate\Http\Client\Request as ClientRequest;
-use Illuminate\Http\Request as HttpRequest;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ServicosController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +24,11 @@ Route::get('/', [function () {
 Route::get('/consulta', [ServicosController::class, 'listarPedidos'])->name("mostraServicos");
 
 Route::post('SalvarServicos', [ServicosController::class, 'cadastrarPedidos']);
+
+Route::get('/atualizar', function(Request $request){
+    
+    return view('atualizar', ['servicos' => Servicos::where('id', $request->id)->first()]);
+});
+Route::post('/atualizar', [ServicosController::class, 'atualizarPedido']);
+
+Route::get('/excluir', [ServicosController::class, 'excluirPedidos']);

@@ -9,7 +9,7 @@ class ServicosController extends Controller
 {
     public function listarPedidos(){
     $Servicos = new Servicos();
-    return view('indexServicos', ['servicos' => $Servicos->all()]);
+    return view('indexServicos', $Servicos->all());
     }
 
     public function cadastrarPedidos(Request $request){
@@ -22,10 +22,21 @@ class ServicosController extends Controller
     $Servicos->save();
     return to_route('mostraServicos');
     }
-    public function excluirPedidos(){
-        
+    public function excluirPedidos(Request $request){
+        Servicos::where('id', $request->id)->delete();
+       return redirect('mostraServicos');
     }
-    public function atualizarPedido(){
+    public function atualizarPedido(Request $request){
+        Servicos::where('id',$request->id)->update([
+            'Nome'=> $request->Nome,
+            'Telefone' => $request->Telefone,
+            'DataContato' => $request->DataContato,
+            'Origem' => $request->Origem,
+            'Observacao' => $request->Observacao
+
+        ]);
+        return redirect('mostraServicos');
+        
 
     }
 }

@@ -12,6 +12,7 @@ class Servicos extends Model
 {
     
     protected $fillable = [
+        'id',
         'Nome',
         'Telefone',
         'Origem',

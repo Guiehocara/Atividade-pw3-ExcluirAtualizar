@@ -59,8 +59,8 @@
           </thead>
           
           <tbody>
-            @foreach ($servicos as $servicos)
-                
+            
+             @foreach
             
             <tr>
               <th scope="row">{{$servicos['id']}}</th>
@@ -69,7 +69,21 @@
               <td>{{$servicos['Origem']}}</td>
               <td>{{$servicos['DataContato']}}</td>
               <td>{{$servicos['Observacao']}}</td>
-              <td><form action=""> <button type="button" class="btn btn-primary" style="margin-left:10px; margin-bottom: 10px;">Atualizar</button> </nobr> <button type="button" class="btn btn-primary"  style="margin-left:10px; margin-bottom: 10px;">Excluir</button></td>
+              <td>
+
+              <a href="/atualizar?id={{$servicos['id']}}">
+              <button type="button" class="btn btn-primary" style="margin-left:10px; margin-bottom: 10px;" name="Id" value="{{$servicos['id']}}">
+              Atualizar
+              </a>
+             
+
+              <a href="/excluir?id={{$servicos['id']}}">
+               <button type="button" class="btn btn-primary"  style="margin-left:10px; margin-bottom: 10px;" name="Id" value="{{$servicos['id']}}">
+               Excluir
+               </button>
+              </a>
+
+               </td>
             </tr>
             @endforeach
           </tbody>
