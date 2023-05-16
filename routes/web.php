@@ -21,7 +21,7 @@ Route::get('/', [function () {
     return view('index');
 }]);
 
-Route::get('/consulta', [ServicosController::class, 'listarPedidos'])->name("mostraServicos");
+Route::get('/consultar', [ServicosController::class, 'listarPedidos'])->name("mostraServicos");
 
 Route::post('SalvarServicos', [ServicosController::class, 'cadastrarPedidos']);
 

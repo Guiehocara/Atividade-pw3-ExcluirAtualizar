@@ -27,7 +27,7 @@
           <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/consulta">Consultar</a>
+          <a class="nav-link" href="/consultar">Consultar</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -50,12 +50,12 @@
   
   <br> 
   <div class="mb-3">
-<h2> id : {{$servicos['id']}} </h2>
+  <label for="exampleFormControlInput1" class="form-label">Id: {{$servicos['id']}}</label>
   <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Id" value="{{$servicos['id']}}" hidden>
   
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+<label for="exampleFormControlInput1" class="form-label">Nome: </label>
   <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Nome" value="{{$servicos['Nome']}}">
 </div>
 <div class="mb-3">
@@ -72,11 +72,11 @@
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Data de Contato:</label>
-  <input class="form-control" type="date"  id="exampleFormControlTextarea1" rows="1" name="DataContato" value="{{ $servicos['DataContato']}} "></textarea>
+  <input class="form-control" type="date"  id="exampleFormControlTextarea1" rows="1" name="DataContato" value="{{$servicos['DataContato']}}">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Observação:</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Observacao" value="{{$servicos['Observacao']}}"></textarea>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Observacao" value="{{$servicos['Observacao']}}">{{$servicos['Observacao']}}</textarea>
 </div>
 <br>
 <button type="submit" class="btn btn-primary">Enviar</button>

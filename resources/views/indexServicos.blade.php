@@ -22,7 +22,7 @@
             <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/consulta">Consultar</a>
+            <a class="nav-link" href="/consultar">Consultar</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -60,7 +60,7 @@
           
           <tbody>
             
-             @foreach
+             @foreach($servicos as $servicos)
             
             <tr>
               <th scope="row">{{$servicos['id']}}</th>
@@ -72,8 +72,9 @@
               <td>
 
               <a href="/atualizar?id={{$servicos['id']}}">
-              <button type="button" class="btn btn-primary" style="margin-left:10px; margin-bottom: 10px;" name="Id" value="{{$servicos['id']}}">
+              <button type="button" class="btn btn-primary" style="margin-left:10px; margin-bottom: 10px;" name="Id" value="{{$servicos['id']}}"> 
               Atualizar
+    </button>
               </a>
              
 

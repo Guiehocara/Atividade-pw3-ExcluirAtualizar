@@ -27,7 +27,7 @@
           <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/consulta">Consultar</a>
+          <a class="nav-link" href="/consultar">Consultar</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -67,7 +67,7 @@
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Data de Contato:</label>
-  <input class="form-control" type="date"  id="exampleFormControlTextarea1" rows="1" name="DataContato"></textarea>
+  <input type="date" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping" name="DataContato">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Observação:</label>
