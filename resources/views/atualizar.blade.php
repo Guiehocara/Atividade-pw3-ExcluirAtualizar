@@ -59,15 +59,30 @@
   <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Nome" value="{{$servicos['Nome']}}">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
+  <label for="exampleFormControlInput1" class="form-label">Contato:</label>
   <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Telefone" value="{{$servicos['Telefone']}}">
 </div>
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label">Origem:</label>
   <select class="form-select" aria-label="Default select example" name="Origem">
+    @if($servicos['origem'] == 'Celular')
   <option selected value="Celular">Celular</option>
-  <option value="Telefone Fixo">Telefone Fixo</option>
-  <option value="Email">Email</option>
+  @endif
+    @if($servicos['origem'] != 'Celular')
+      <option value="Celular">Celular</option>
+    @endif
+    @if($servicos['origem'] == 'Telefone')
+  <option value="Telefone Fixo" selected>Telefone Fixo</option>
+      @endif
+      @if($servicos['origem'] != 'Telefone')
+      <option value="Telefone Fixo">Telefone Fixo</option>
+     @endif
+      @if($servicos['origem'] == 'Email')
+      <option value="Email" selected>Email</option>
+      @endif
+      @if($servicos['origem'] != 'Email')
+      <option value="Email">Email</option>
+      @endif
 </select>
 </div>
 <div class="mb-3">

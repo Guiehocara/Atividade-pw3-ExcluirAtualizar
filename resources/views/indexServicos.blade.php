@@ -50,7 +50,7 @@
             <tr>
             <th scope="col">ID</th>
               <th scope="col">Nome</th>
-              <th scope="col">Telefone</th>
+              <th scope="col">Contato</th>
               <th scope="col">Origem</th>
               <th scope="col">Data de Contato</th>
               <th scope="col">Observação</th>

@@ -54,7 +54,7 @@
   <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Nome">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Telefone:</label>
+  <label for="exampleFormControlInput1" class="form-label">Contato:</label>
   <input type="" class="form-control" id="exampleFormControlInput1" placeholder="" name="Telefone">
 </div>
 <div class="mb-3">
